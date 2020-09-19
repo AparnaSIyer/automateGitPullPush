@@ -7,7 +7,7 @@ from datetime import datetime
 os.chdir(os.path.abspath('/home/aparna/PycharmProjects/myFirstProject'))
 
 Popen(['git', 'add', '--all'])
-message = "Updated "+ datetime.now().strftime("%H:%M:%S")
+message = "Updated "+ datetime.now().strftime("%d:%m:%Y %H:%M:%S")
 time.sleep(10)
 Popen(['git', 'commit', '-m', message])
 remote_url = 'git@github.com:AparnaSIyer/automateGitPullPush.git'
