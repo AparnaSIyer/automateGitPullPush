@@ -32,3 +32,6 @@ def push_automate_git_repo():
     print(Popen('git push',shell=True))
     time.sleep(5)
 push_automate_git_repo()
+
+#cron job scheduling
+#* * * * * cd /usr/bin/python3 /home/aparna/PycharmProjects/myFirstProject/automate_git_push.py
