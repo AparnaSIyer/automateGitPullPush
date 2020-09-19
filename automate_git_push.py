@@ -1,13 +1,13 @@
 from subprocess import *
 import os
 import time
-
+from datetime import datetime
 
 # Popen(['git','clone',str('https://github.com/AparnaSIyer/hello-world'),'/home/aparna/my_project_1'])
 os.chdir(os.path.abspath('/home/aparna/PycharmProjects/myFirstProject'))
 
 Popen(['git', 'add', '--all'])
-message = "Can be changed"
+message = "Updated "+ datetime.now().strftime("%H:%M:%S")
 time.sleep(10)
 Popen(['git', 'commit', '-m', message])
 remote_url = 'git@github.com:AparnaSIyer/automateGitPullPush.git'
