@@ -17,3 +17,4 @@ print(call(['git', 'remote', '-v']))
 # print('setting remote repo')
 
 (Popen('git push', shell=True))
+#Test whether the pull command is working via PyCharm 
