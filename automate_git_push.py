@@ -23,6 +23,6 @@ repo_2_pub_url="git@github.com:AparnaSIyer/Repo_backup_2.git"
 def push_automate_git_repo():
 
     # Popen(['git', 'clone', str('git@github.com:AparnaSIyer/Repo_backup_1.git'), '/home/aparna/Repo_backup_1'])
-    Popen(['git', 'clone', str('git@github.com:AparnaSIyer/Repo_backup_2.git'), '/home/aparna/Repo_backup_22'])
+    Popen(['git', 'clone', str('git@github.com:AparnaSIyer/Repo_backup_2.git'), '/home/aparna/Repo_2'])
 
 push_automate_git_repo()
