@@ -15,6 +15,14 @@ remote_url2 = 'git@github.com:AparnaSIyer/hello-world.git'
 print(call("git remote set-url origin 'git@github.com:AparnaSIyer/automateGitPullPush.git'", shell=True))
 print(call(['git', 'remote', '-v']))
 # print('setting remote repo')
-
 (Popen('git push', shell=True))
-#Test whether the pull command is working via PyCharm 
+#Test whether the pull command is working via Github
+repo_1_pvt_url="git@github.com:AparnaSIyer/Repo_backup_1.git"
+repo_2_pub_url="git@github.com:AparnaSIyer/Repo_backup_2.git"
+#pullling the latest code changes to above repos
+def push_automate_git_repo():
+    Popen(['git', 'clone', str('git@github.com:AparnaSIyer/Repo_backup_1.git'), '/home/aparna/Repo_backup_1'])
+    time.sleep(5)
+    Popen(['git', 'clone', str('git@github.com:AparnaSIyer/Repo_backup_2.git'), '/home/aparna/Repo_backup_2'])
+
+push_automate_git_repo()
