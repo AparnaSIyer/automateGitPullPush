@@ -23,7 +23,7 @@ print(call(['git', 'remote', '-v']))
 #Test whether the pull command is working via Github
 #test test test
 #pullling the latest code changes to above repos
-#test test test test
+# my first project
 def push_automate_git_repo():
     # Popen(['git', 'clone', str('git@github.com:AparnaSIyer/Repo_backup_1.git'), '/home/aparna/Repo_backup_1'])
     # Popen(['git', 'clone', str('git@github.com:AparnaSIyer/Repo_backup_2.git'), '/home/aparna/Repo_2'])
