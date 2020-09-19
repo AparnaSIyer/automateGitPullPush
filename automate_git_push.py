@@ -12,10 +12,12 @@ def push_automate_git_repo():
     # Popen(['git', 'clone', str('git@github.com:AparnaSIyer/Repo_backup_1.git'), '/home/aparna/Repo_backup_1'])
     Popen(['git', 'clone', str('git@github.com:AparnaSIyer/Repo_backup_2.git'), '/home/aparna/Repo_2'])
     print(call("git remote set-url origin 'git@github.com:AparnaSIyer/Repo_backup_2.git'", shell=True))
+    print(call("git remote set-url origin 'git@github.com:AparnaSIyer/Repo_backup_1.git'", shell=True))
     print(Popen(['git', 'pull', str('git@github.com:AparnaSIyer/automateGitPullPush.git')]))
     print(Popen('git push',shell=True))
     time.sleep(5)
 push_automate_git_repo()
+#hello bro
 Popen(['git','pull'])
 Popen(['git', 'add', '--all'])
 message = "Updated "+ datetime.now().strftime("%d/%m/%Y %H:%M:%S")
