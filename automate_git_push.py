@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Popen(['git','clone',str('https://github.com/AparnaSIyer/hello-world'),'/home/aparna/my_project_1'])
 os.chdir(os.path.abspath('/home/aparna/PycharmProjects/myFirstProject'))
-
+Popen(['git','pull'])
 Popen(['git', 'add', '--all'])
 message = "Updated "+ datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 time.sleep(10)
